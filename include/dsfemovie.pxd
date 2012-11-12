@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# pySFML2 - Cython SFML Wrapper for Python
+# pysfeMovie - a Python binding for sfeMovie
 # Copyright 2012, Jonathan De Wachter <dewachter.jonathan@gmail.com>
 #
 # This software is released under the GPLv3 license.

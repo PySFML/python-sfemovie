@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# pySFML2 - Cython SFML Wrapper for Python
+# pysfeMovie - a Python binding for sfeMovie
 # Copyright 2012, Jonathan De Wachter <dewachter.jonathan@gmail.com>
 #
 # This software is released under the GPLv3 license.
@@ -39,7 +39,7 @@ kwargs = dict(name='pysfeMovie',
 			description='A Python binding for sfeMovie',
 			long_description=long_description,
 			author_email='dewachter.jonathan@gmail.com',
-			url='http://openhelbreath.be/python-sfml2',
+			url='http://openhelbreath.be/python-sfml2/sfemovie',
 			license='GPLv3',
 			classifiers=['Development Status :: 5 - Production/Stable',
 						'Intended Audience :: Developers',

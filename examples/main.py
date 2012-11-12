@@ -1,3 +1,14 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+#
+# pysfeMovie - a Python binding for sfeMovie
+# Copyright 2012, Jonathan De Wachter <dewachter.jonathan@gmail.com>
+#
+# This software is released under the GPLv3 license.
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
 import sfml as sf
 import sfemovie as sfe
 
@@ -19,7 +30,7 @@ movie.resize_to_frame((0, 0, 640, 480), True)
 # start movie playback
 movie.play()
 
-while window.opened:
+while window.is_open:
 	for event in window.events:
 		
 		# window closure
