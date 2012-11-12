@@ -5,9 +5,6 @@ sfeMovie binding
 This binding is made of only one class :class:`Movie`. You can play 
 movie with it.
 
-
-
-
 .. class:: Movie
 
    :class:`Movie` allows you to play movies in sfml applications.
