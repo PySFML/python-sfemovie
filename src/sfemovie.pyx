@@ -29,7 +29,11 @@ cdef extern from "graphics.h":
 	cdef class sfml.graphics.Texture [object PyTextureObject]:
 		cdef dgraphics.Texture *p_this
 		cdef bint               delete_this
-			
+		
+cdef dsystem.IntRect rectangle_to_intrect(rectangle):
+	l, t, w, h = rectangle
+	return dsystem.IntRect(l, t, w, h)
+		
 cdef Time wrap_time(dsystem.Time* p):
 	cdef Time r = Time.__new__(Time)
 	r.p_this = p
@@ -102,9 +106,8 @@ cdef class Movie(Drawable):
 		def __get__(self):
 			return Vector2(self.p_this.getSize().x, self.p_this.getSize().y)
 
-	# TODO: handle IntRect
-	def resize_to_frame(self, int x, int y, int w, int h, bint preserveRatio=True):
-		self.p_this.resizeToFrame(x, y, w, h, preserveRatio)
+	def resize_to_frame(self, frame, bint preserve_ratio=True):
+		self.p_this.resizeToFrame(rectangle_to_intrect(frame), preserve_ratio)
 
 	property framerate:
 		def __get__(self):

@@ -9,7 +9,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-from dsystem cimport Time, Vector2i
+from dsystem cimport Time, Vector2i, IntRect
 from dgraphics cimport Texture
 
 cdef extern from "sfeMovie/Movie.hpp" namespace "sfe":
@@ -31,8 +31,8 @@ cdef extern from "sfeMovie/Movie.hpp" namespace "sfe":
 		float getVolume()
 		Time getDuration()
 		Vector2i getSize()
-		void resizeToFrame(int, int, int, int)
-		void resizeToFrame(int, int, int, int, bint)
+		void resizeToFrame(IntRect)
+		void resizeToFrame(IntRect, bint)
 		float getFramerate()
 		unsigned int getSampleRate()
 		unsigned int getChannelCount()
