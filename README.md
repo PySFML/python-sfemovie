@@ -1,0 +1,26 @@
+About
+=====
+This is version 1.0 of a Python bindings for `sfeMovie <http://lucas.soltic.perso.luminy.univmed.fr/sfeMovie/>`_ 
+released under the `LGPLv3 <http://www.gnu.org/copyleft/lgpl.html>`_ license.
+
+Python bindings really are the perfect way to sketch software using SFML.
+
+.. note ::
+        So far, this binding has only been tested thoroughly on Linux,
+        though minimal testing has been done on Windows.
+
+Getting the Code
+================
+After you've installed `Git <http://git-scm.com/downloads>`_, you may issue
+the following command to obtain the source::
+
+    git clone git@github.com:Sonkun/python-sfemovie.git
+    cd python-sfemovie
+
+Resources
+=========
+* Website: http://sfemovie.python-sfml.org
+* Project Page: https://github.com/Sonkun/python-sfemovie
+* Documentation: http://sfemovie.python-sfml.org/1.0
+* Bug Tracker: http://github.com/Sonkun/python-sfemovie/issues
+
