@@ -103,7 +103,7 @@ html_theme = 'haiku'
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-#html_title = None
+html_title = "sfeMovie"
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
@@ -227,8 +227,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'pysfeMovie', u'pysfeMovie Documentation',
-   u'Jonathan De Wachter', 'pysfeMovie', 'One line description of project.',
+  ('index', 'pysfeMovie', u'pysfeMovie',
+   u'Jonathan De Wachter', 'pysfeMovie', 'Python binding for sfeMovie',
    'Miscellaneous'),
 ]
 

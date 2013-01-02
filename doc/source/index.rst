@@ -1,7 +1,58 @@
+Python binding for sfeMovie
+===========================
+
+.. contents:: :local:
+   :depth: 1
+
 .. py:module:: sfemovie
 
-sfeMovie binding
-================
+Introduction
+------------
+This module allows to play videos in your python application using 
+sfml. Orginally, this is a library written in C++ made by **Lucas Soltic** 
+which has been ported to Python.
+
+The official website: http://lucas.soltic.perso.luminy.univmed.fr/sfeMovie/
+
+This page summarizes everything you need to know about this binding. 
+You'll find installers, compilation instructions and the API reference.
+
+This is the version 1.0 based on pySFML 1.2 which is itself based on sfml2-rc.
+
+Download
+--------
+Sorry, no packages for Mac OS X, Windows  8, Fedora, ArchLinux and 
+others. You'll have to compile by yourself.
+
+Windows
+^^^^^^^
+* `pysfeMovie-1.0.0.win32-py2.6.exe <http://python-sfml.org/1.0/downloads/pysfeMovie-1.0.0.win32-py2.6.exe>`_ [Python 2.6] [32 bit]
+* `pysfeMovie-1.0.0.win32-py2.7.exe <http://python-sfml.org/1.0/downloads/pysfeMovie-1.0.0.win32-py2.7.exe>`_ [Python 2.7] [32 bit]
+* `pysfeMovie-1.0.0.win32-py3.2.exe <http://python-sfml.org/1.0/downloads/pysfeMovie-1.0.0.win32-py3.2.exe>`_ [Python 3.2] [32 bit]
+* `pysfeMovie-1.0.0.win64-py2.6.exe <http://python-sfml.org/1.0/downloads/pysfeMovie-1.0.0.win64-py2.6.exe>`_ [Python 2.6] [64 bit]
+* `pysfeMovie-1.0.0.win64-py2.7.exe <http://python-sfml.org/1.0/downloads/pysfeMovie-1.0.0.win64-py2.7.exe>`_ [Python 2.7] [64 bit]
+* `pysfeMovie-1.0.0.win64-py3.2.exe <http://python-sfml.org/1.0/downloads/pysfeMovie-1.0.0.win64-py3.2.exe>`_ [Python 3.2] [64 bit]
+
+Ubuntu
+^^^^^^
+Type the following::
+
+   sudo add-apt-repository ppa:sonkun/sfml
+   sudo apt-get update
+   sudo apt-get install python-sfemovie
+  
+It should install C++ libraries, python bindings for SFML and the 
+sfeMovie binding as well.
+
+Compilation
+^^^^^^^^^^^
+Simply type one of the following::
+
+	sudo python setup.py install
+	sudo python3 setup.py install
+	
+API Reference
+-------------
 This binding is made of only one class :class:`Movie`. You can play 
 movie with it.
 
