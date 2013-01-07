@@ -20,6 +20,8 @@ find installers, compilation instructions and the API reference.
 This is the version 1.0 based on sfeMovie 1.0 and pySFML 1.2 which is itself 
 based on sfml2-rc.
 
+This binding is released under the **LGPLv3** license.
+
 Download
 --------
 Sorry, no packages for Mac OS X, Windows  8, Fedora, ArchLinux and 
