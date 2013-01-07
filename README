@@ -1,6 +1,6 @@
 About
 =====
-This is version 1.0 of a Python bindings for `sfeMovie <http://lucas.soltic.perso.luminy.univmed.fr/sfeMovie/>`_ 
+This is version 1.0 of a Python binding for `sfeMovie <http://lucas.soltic.perso.luminy.univmed.fr/sfeMovie/>`_ 
 released under the `LGPLv3 <http://www.gnu.org/copyleft/lgpl.html>`_ license.
 
 Python bindings really are the perfect way to sketch software using SFML.
