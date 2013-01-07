@@ -14,10 +14,11 @@ which has been ported to Python.
 
 The official website: http://lucas.soltic.perso.luminy.univmed.fr/sfeMovie/
 
-This page summarizes everything you need to know about this binding. 
-You'll find installers, compilation instructions and the API reference.
+This page summarizes everything you need to know about this binding, you'll 
+find installers, compilation instructions and the API reference.
 
-This is the version 1.0 based on pySFML 1.2 which is itself based on sfml2-rc.
+This is the version 1.0 based on sfeMovie 1.0 and pySFML 1.2 which is itself 
+based on sfml2-rc.
 
 Download
 --------
@@ -26,12 +27,15 @@ others. You'll have to compile by yourself.
 
 Windows
 ^^^^^^^
-* `pysfeMovie-1.0.0.win32-py2.6.exe <http://python-sfml.org/1.0/downloads/pysfeMovie-1.0.0.win32-py2.6.exe>`_ [Python 2.6] [32 bit]
-* `pysfeMovie-1.0.0.win32-py2.7.exe <http://python-sfml.org/1.0/downloads/pysfeMovie-1.0.0.win32-py2.7.exe>`_ [Python 2.7] [32 bit]
-* `pysfeMovie-1.0.0.win32-py3.2.exe <http://python-sfml.org/1.0/downloads/pysfeMovie-1.0.0.win32-py3.2.exe>`_ [Python 3.2] [32 bit]
-* `pysfeMovie-1.0.0.win64-py2.6.exe <http://python-sfml.org/1.0/downloads/pysfeMovie-1.0.0.win64-py2.6.exe>`_ [Python 2.6] [64 bit]
-* `pysfeMovie-1.0.0.win64-py2.7.exe <http://python-sfml.org/1.0/downloads/pysfeMovie-1.0.0.win64-py2.7.exe>`_ [Python 2.7] [64 bit]
-* `pysfeMovie-1.0.0.win64-py3.2.exe <http://python-sfml.org/1.0/downloads/pysfeMovie-1.0.0.win64-py3.2.exe>`_ [Python 3.2] [64 bit]
+These installers provide ffmpeg built with all available decoder/codecs. If you 
+want to restrict them, recompile pysfeMovie by hand.
+
+* `pysfeMovie-1.0.0.win32-py2.6.exe <http://sfemovie.python-sfml.org/1.0/downloads/pysfeMovie-1.0.0.win32-py2.6.exe>`_ [Python 2.6] [32 bit]
+* `pysfeMovie-1.0.0.win32-py2.7.exe <http://sfemovie.python-sfml.org/1.0/downloads/pysfeMovie-1.0.0.win32-py2.7.exe>`_ [Python 2.7] [32 bit]
+* `pysfeMovie-1.0.0.win32-py3.2.exe <http://sfemovie.python-sfml.org/1.0/downloads/pysfeMovie-1.0.0.win32-py3.2.exe>`_ [Python 3.2] [32 bit]
+* `pysfeMovie-1.0.0.win64-py2.6.exe <http://sfemovie.python-sfml.org/1.0/downloads/pysfeMovie-1.0.0.win64-py2.6.exe>`_ [Python 2.6] [64 bit]
+* `pysfeMovie-1.0.0.win64-py2.7.exe <http://sfemovie.python-sfml.org/1.0/downloads/pysfeMovie-1.0.0.win64-py2.7.exe>`_ [Python 2.7] [64 bit]
+* `pysfeMovie-1.0.0.win64-py3.2.exe <http://sfemovie.python-sfml.org/1.0/downloads/pysfeMovie-1.0.0.win64-py3.2.exe>`_ [Python 3.2] [64 bit]
 
 Ubuntu
 ^^^^^^
@@ -41,8 +45,12 @@ Type the following::
    sudo apt-get update
    sudo apt-get install python-sfemovie
   
-It should install C++ libraries, python bindings for SFML and the 
+It should install C++ libraries, Python bindings for SFML and the 
 sfeMovie binding as well.
+
+There's also a package named "pysfemovie-example" which provides an example you 
+can launch by typing: `pysfemovie-example` in a terminal. It should allow you to 
+see whether the binding is functional or not on your system.
 
 Compilation
 ^^^^^^^^^^^
