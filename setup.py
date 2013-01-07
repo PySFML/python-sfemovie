@@ -22,10 +22,16 @@ except ValueError:
 
 # define the include directory
 if platform.system() == 'Windows':
-	include_dir = "include\\pySFML\\"
+	include_dir = sys.prefix + "\\include\\pySFML"
 else:
 	major, minor, _, _ , _ = sys.version_info
 	include_dir = sys.prefix + "/include/python{0}.{1}/sfml/".format(major, minor)
+
+# define libraries to link with
+if platform.system() == 'Windows':
+	libraries=['sfml-system', 'sfml-window', 'sfml-graphics', 'sfeMovie', 'swscale', 'swresample', 'avutil', 'avformat', 'avfilter', 'avfilter', 'avcodec']
+else:
+	libraries=['sfml-system', 'sfml-window', 'sfml-graphics', 'sfeMovie', 'swscale']
 
 if USE_CYTHON:
 	try:
@@ -48,7 +54,7 @@ sfemovie = Extension('sfemovie',
 	sources = [src], 
 	include_dirs = ['include', include_dir], 
 	language='c++', 
-	libraries=['sfml-system', 'sfml-window', 'sfml-graphics', 'sfeMovie', 'swscale'])
+	libraries=libraries)
 
 with open('README', 'r') as f:
 	long_description = f.read()
