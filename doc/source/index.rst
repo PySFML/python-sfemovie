@@ -61,6 +61,12 @@ Simply type one of the following::
 	sudo python setup.py install
 	sudo python3 setup.py install
 
+Example
+-------
+.. literalinclude:: /../../examples/main.py
+   :lines: 10-
+   :linenos:
+
 API Reference
 -------------
 This binding is made of only one class :class:`Movie`. You can play
